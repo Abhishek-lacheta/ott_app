@@ -8,13 +8,12 @@ class ApiConstants {
 
   static const int defaultPageSize = 5;
 
-  /// High-reliability Google Cloud Storage public sample MP4 videos.
-  /// Standard H.264/AAC MP4 formats supported natively on Android, iOS, and Web.
+  /// High-reliability, public sample MP4 videos with HTTP 200 & byte-range streaming support.
+  /// Fully compatible with ExoPlayer, AVPlayer, and Web without authentication or 403 blocks.
   static const List<Map<String, dynamic>> sampleVideosData = [
     {
       'id': 'video_001',
-      'videoUrl':
-          'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+      'videoUrl': 'https://media.w3.org/2010/05/sintel/trailer.mp4',
       'thumbnailUrl':
           'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&q=80',
       'username': 'alex_wanderer',
@@ -29,8 +28,7 @@ class ApiConstants {
     },
     {
       'id': 'video_002',
-      'videoUrl':
-          'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+      'videoUrl': 'https://vjs.zencdn.net/v/oceans.mp4',
       'thumbnailUrl':
           'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=80',
       'username': 'ocean_breeze',
@@ -45,8 +43,7 @@ class ApiConstants {
     },
     {
       'id': 'video_003',
-      'videoUrl':
-          'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
+      'videoUrl': 'https://media.w3.org/2010/05/bunny/trailer.mp4',
       'thumbnailUrl':
           'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&q=80',
       'username': 'tech_creator',
@@ -61,8 +58,7 @@ class ApiConstants {
     },
     {
       'id': 'video_004',
-      'videoUrl':
-          'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyBlazes.mp4',
+      'videoUrl': 'https://media.w3.org/2010/05/video/movie_300.mp4',
       'thumbnailUrl':
           'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&q=80',
       'username': 'dj_pulse',
@@ -78,7 +74,7 @@ class ApiConstants {
     {
       'id': 'video_005',
       'videoUrl':
-          'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
+          'https://raw.githubusercontent.com/mediaelement/mediaelement-files/master/big_buck_bunny.mp4',
       'thumbnailUrl':
           'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&q=80',
       'username': 'cyber_ninja',
@@ -94,7 +90,7 @@ class ApiConstants {
     {
       'id': 'video_006',
       'videoUrl':
-          'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+          'https://raw.githubusercontent.com/mediaelement/mediaelement-files/master/echo-hereweare.mp4',
       'thumbnailUrl':
           'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500&q=80',
       'username': 'nature_daily',
@@ -107,38 +103,5 @@ class ApiConstants {
       'commentsCount': 624,
       'sharesCount': 530,
     },
-    {
-      'id': 'video_007',
-      'videoUrl':
-          'https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
-      'thumbnailUrl':
-          'https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&q=80',
-      'username': 'sci_fi_hub',
-      'userAvatar':
-          'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80',
-      'caption':
-          'Futuristic VFX breakdown. Cinema meets advanced technology! 🤖🦾 What do you think about AI in filmmaking? #scifi #vfx #cgi #cinema',
-      'hashtags': ['scifi', 'vfx', 'cgi', 'cinema'],
-      'likesCount': 19300,
-      'commentsCount': 481,
-      'sharesCount': 310,
-    },
-    {
-      'id': 'video_008',
-      'videoUrl':
-          'https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-      'thumbnailUrl':
-          'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500&q=80',
-      'username': 'anim_art',
-      'userAvatar':
-          'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&q=80',
-      'caption':
-          'Steampunk surreal machinery in motion. The world of open source 3D art! ⚙️🎨 #animation #3dart #steampunk #digitalart',
-      'hashtags': ['animation', '3dart', 'steampunk', 'digitalart'],
-      'likesCount': 16700,
-      'commentsCount': 312,
-      'sharesCount': 224,
-    },
   ];
 }
-
